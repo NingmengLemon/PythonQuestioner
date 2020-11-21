@@ -4,7 +4,7 @@ from random import shuffle
 import json
 
 #JSON数据
-jsonFile = open('./Example.json','r',encoding='utf-8')
+jsonFile = open('./SDS.json','r',encoding='utf-8')
 data = json.loads(jsonFile.read())
 jsonFile.close()
 
@@ -22,7 +22,7 @@ def makeRes(stDict,n):
 
 #在这里修改处理总分的方式，如果要高级操作就自己改代码
 def compute(score):
-    return score
+    return int(score*1.25)
 
 class Test(object):
     #初始化
@@ -34,7 +34,7 @@ class Test(object):
         #生成询问顺序列表
         self.askOrd = list(range(0,len(data['objects'])))
         #乱序问题
-        if self.data['random']:
+        if self.data['random'] == True:
             shuffle(self.askOrd)
         #创建开始窗口
         self.startWindow = tk.Tk()

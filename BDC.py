@@ -4,7 +4,7 @@ from random import shuffle
 import json
 
 #JSON数据
-jsonFile = open('./Example.json','r',encoding='utf-8')
+jsonFile = open('./BDC.json','r',encoding='utf-8')
 data = json.loads(jsonFile.read())
 jsonFile.close()
 

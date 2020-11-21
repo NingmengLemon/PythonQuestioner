@@ -4,7 +4,7 @@ from random import shuffle
 import json
 
 #JSON数据
-jsonFile = open('./Example.json','r',encoding='utf-8')
+jsonFile = open('./TAS.json','r',encoding='utf-8')
 data = json.loads(jsonFile.read())
 jsonFile.close()
 
@@ -61,7 +61,7 @@ class Test(object):
         self.window = tk.Tk()
         self.window.title(self.data['name'])
         self.window.minsize(300,200)
-        self.window.resizable(height=False,width=False)
+        self.startWindow.resizable(height=False,width=False)
         #组件
         self.sctext = scrolledtext.ScrolledText(self.window,wrap=tk.WORD,height=10)
         self.libo_choice = tk.Listbox(self.window,height=5)
