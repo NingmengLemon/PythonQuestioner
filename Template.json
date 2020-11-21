@@ -1,0 +1,12 @@
+{
+	"name":"",
+	"description":"",
+	"objects":[
+		{"text":"题目1","choice":{"选项1":0,"选项2":0}},
+		{"text":"题目2","choice":{"选项1":0,"选项2":0}}
+	],
+	"random":true,
+	"results":{
+		"0,999":""
+	}
+}
